@@ -44,7 +44,8 @@ const subtitleLocales = {
 	Chinese: 'zh-Hans',
 	TraditionalChinese: 'zh-Hant',
 	Japanese: 'ja',
-	Korean: 'ko'
+	Korean: 'ko',
+	Thai: 'th'
 };
 
 const CHARACTER = 'CH0297';
@@ -61,21 +62,22 @@ const AUDIO_DETAIL = [
                 "なんとか、フェンスは越えられました、けど……。"
             ],
             English: [
-                "Ugh...",
-                "I managed to get over the fence, somehow, but..."
+                "Ugh... ",
+                "I cleared the fence...somehow... "
             ],
             Chinese: [
                 "呜呜……。",
                 "总算是、翻过栅栏了、但是……。"
             ],
             TraditionalChinese: [
-                "嗚嗚……！",
-                "總算是、翻過柵欄了、但是……。"
+                "嗚嗚……",
+                "雖然設法翻過了柵欄……"
             ],
             Korean: [
-                "우으으!",
-                "난 어떻게든 울타리를 넘어갔지만..."
-            ]
+                "우읏……. ",
+                "어떻게 펜스는 넘어가기는 했는데요……. "
+            ],
+            Thai: ["อึก... ","ฉันข้ามรั้วมาได้แล้ว ก็จริงค่ะ..."]
         }
     },
     {
@@ -85,21 +87,22 @@ const AUDIO_DETAIL = [
                 "動けない、です……。"
             ],
             English: [
-                "My clothes got caught...",
-                "And I can't... move..."
+                "But my clothes got stuck...",
+                "And I can't move..."
             ],
             Chinese: [
                 "衣服被挂住了……。",
                 "动不了了……。"
             ],
             TraditionalChinese: [
-                "衣服被掛住了……。",
-                "動不了了……。"
+                "衣服卻被勾住……",
+                "變得動彈不得……"
             ],
             Korean: [
-                "내 옷이 잡혔어",
-                "그리고 나는... 움직일 수 없다..."
-            ]
+                "옷이 걸려 버려서…….",
+                "움직일 수가 없어요……."
+            ],
+            Thai: ["แต่ว่าชุดมันไปติด...","ก็เลยขยับไม่ได้ค่ะ..."]
         }
     },
     {
@@ -109,21 +112,22 @@ const AUDIO_DETAIL = [
                 "私が、近道をしようとしたから……。"
             ],
             English: [
-                "Uuu... I'm so sorry...",
-                "It's all because I tried to take a shortcut..."
+                "Ugh... I'm sorry... ",
+                "It's all because I suggested we take a shortcut... "
             ],
             Chinese: [
                 "呜……对不起……。",
                 "都怪我、想抄近路……。"
             ],
             TraditionalChinese: [
-                "嗚……對不起……。",
-                "都怪我、想抄近路……。"
+                "嗚嗚……對不起…… ",
+                "都怪我想走捷徑，才會這樣……"
             ],
             Korean: [
-                "너무 미안해",
-                "내가 단축을 시도해서..."
-            ]
+                "우으…… 죄송해요……. ",
+                "제가 괜히 지름길로 가자고 해버려서……. "
+            ],
+            Thai: ["ฮือ... ขอโทษค่ะ... ","ฉันไม่น่าชวนให้ ใช้ทางลัดเลย... "]
         }
     },
     {
@@ -133,21 +137,22 @@ const AUDIO_DETAIL = [
                 "えっ？フェンスの横に、くぐり戸……！？"
             ],
             English: [
-                "...Huh? How did you get to the other side, Sensei...?",
-                "Eh? There's a side door... right next to the fence!?"
+                "...Huh? How are you on the other side, Sensei...? ",
+                "What?! There was a gate next to the fence...?!"
             ],
             Chinese: [
                 "……咦？老师您、是怎么到对面去的……？",
                 "诶？栅栏旁边、有个小门……！？"
             ],
             TraditionalChinese: [
-                "……咦？老師您、是怎麼到對面去的……？",
-                "誒？柵欄旁邊、有個小門……！？"
+                "……奇怪？老師是怎麼到對面去的……？ ",
+                "咦！？柵欄旁邊有個小門……！？"
             ],
             Korean: [
-                "어떻게 다른 쪽으로 갔어요?",
-                "울타리 옆에는 옆 문이 있어요?"
-            ]
+                "……어라? 선생님은, 어떻게 건너편에……? ",
+                "네?! 펜스 옆에 쪽문이……?!"
+            ],
+            Thai: ["เอ๋...? คุณครูไปอยู่ อีกฝั่งหนึ่งได้ยังไง...? ","คะ?! มีประตูเล็กๆ อยู่ข้างรั้วเหรอ...?!"]
         }
     },
     {
@@ -157,21 +162,22 @@ const AUDIO_DETAIL = [
                 "……先生……私の服、少し引っ張っていただいても、良いでしょうか？"
             ],
             English: [
-                "Uuuu... I didn't even know that, and yet I...",
-                "...Sensei... could you please pull on my clothes a little bit?"
+                "Ugh... I didn't know that, I... ",
+                "...Sensei, can you free the part that got stuck and help me out?"
             ],
             Chinese: [
                 "呜呜……在不知道有门的情况下，我……。",
                 "……老师……我的衣服，可以请您、稍微拉一下吗？"
             ],
             TraditionalChinese: [
-                "嗚嗚……在不知道有門的情況下，我……。",
-                "……老師……我的衣服，可以請您、稍微拉一下嗎？"
+                "嗚嗚……我居然沒發現，就這樣……",
+                "老師……我的衣服，能請您稍微，幫我拉一下嗎？"
             ],
             Korean: [
-                "나도 몰랐지만...",
-                "...선생님... 내 옷 좀 벗으실래요?"
-            ]
+                "으우우우…… 그런 것도 모르고, 저는……. ",
+                "……선생님, 철조망에 걸린 부분을 좀 들어서 풀어주실 수 있으신가요?  "
+            ],
+            Thai: ["อึกกก... ฉันไม่รู้เรื่องนั้นเลย... ","คุณครูคะ... ช่วยแกะชุด ที่ไปติดรั้วตาข่าย ให้หน่อยได้มั้ยคะ?"]
         }
     }
 ];
@@ -283,7 +289,7 @@ function playVoiceline() {
 			track.play().catch(finish);
 
 			if (dialogBox) {
-				textbox.textContent = dialog[window.selectedLanguage][index];
+				textbox.textContent = getSubtitleText(dialog, window.selectedLanguage, index);
 				textbox.style.opacity = 1;
 			}
 		},
@@ -453,6 +459,16 @@ function setMouse(event) {
 	return { x: ax - canvas.width * positionX, y: ay - canvas.height * positionY };
 }
 
+function getSubtitleText(dialog, language, index) {
+	let text = dialog?.[language]?.[index];
+	if (text == null && language === 'Thai') {
+		language = 'English';
+		text = dialog?.[language]?.[index];
+	}
+	textbox.lang = subtitleLocales[language];
+	return text ?? "";
+}
+
 function updateSubtitleLanguage() {
 	let language = subtitleLanguagePreference;
 	if (language === 'auto') {
@@ -466,6 +482,8 @@ function updateSubtitleLanguage() {
 			language = 'Japanese';
 		} else if (primary === 'ko' || primary === 'korean' || primary === 'koreana') {
 			language = 'Korean';
+		} else if (primary === 'th' || primary === 'thai') {
+			language = 'Thai';
 		} else {
 			language = 'English';
 		}
@@ -475,7 +493,7 @@ function updateSubtitleLanguage() {
 	window.selectedLanguage = language;
 	textbox.lang = subtitleLocales[language];
 	const clip = currentTracks.at(-1);
-	if (dialogBox && clip) textbox.textContent = clip.dialog[language][clip.index];
+	if (dialogBox && clip) textbox.textContent = getSubtitleText(clip.dialog, language, clip.index);
 }
 
 function init() {
